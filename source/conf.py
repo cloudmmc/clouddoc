@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'network'
-copyright = '2023, tim'
-author = 'tim'
+project = 'cloud-mmc-doc'
+copyright = '2023, cloudmmc'
+author = 'timothychen'
 release = 'v1'
 
 # -- General configuration ---------------------------------------------------
@@ -22,7 +22,7 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 
-language = 'zh_CN'
+language = 'en'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
