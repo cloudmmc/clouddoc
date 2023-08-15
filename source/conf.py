@@ -14,7 +14,10 @@ release = 'v1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+    'recommonmark',
+    'sphinx_markdown_tables'
+]
 
 templates_path = ['_templates']
 exclude_patterns = []
