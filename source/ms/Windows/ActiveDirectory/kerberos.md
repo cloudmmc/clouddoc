@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-#
+# Refresh AD computer group membership
 
 ## Refresh membership in AD security groups without reboot or logoff
 

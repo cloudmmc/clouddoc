@@ -1,6 +1,5 @@
 
-
-# Installation
+# PSWindowsUpdate Installation
 
 ## Online install PSWindowsUpdate module
 

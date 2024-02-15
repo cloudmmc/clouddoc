@@ -1,33 +1,35 @@
-# winver
+# Get Windows computer information
 
+## GUI: winver
 
+winver
 
-# systeminfo
+## systeminfo
 
 systeminfo = Get-ComputerInfo
 
 Get-ComputerInfo | select OsName, OsVersion, WindowsVersion, OsBuildNumber, OsArchitecture
 
-## Command output can be filtered:
+### Command output can be filtered:
 
 systeminfo | findstr /B /C:"OS Name" /B /C:"OS Version"
 
-## Or use the WMI command:
+### Or use the WMI command:
 
 wmic os get Caption, Version, BuildNumber, OSArchitecture
 
-# env
+## env
 
-## Get the Windows version with the environment variable:
+### Get the Windows version with the environment variable:
 
 [System.Environment]::OSVersion.Version
 
-## From the WMI class:
+### From the WMI class:
 
 Get-WmiObject -Class Win32_OperatingSystem | fl -Property Caption, Version, BuildNumber
 Get-CimInstance Win32_OperatingSystem | fl -Property Caption, Version, BuildNumber, OSArchitecture
 
-# registry
+## registry
 
 Reg Query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName
 Reg Query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v DisplayVersion

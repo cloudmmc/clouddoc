@@ -1,9 +1,9 @@
-Windows skillset collections
+[MS] Windows collections
 =================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    Powershell/PSWindowsUpdate
-   Windows/General
-   Windows/ActiveDirectory
+   Windows/General/winver
+   Windows/ActiveDirectory/kerberos
