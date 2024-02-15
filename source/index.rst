@@ -1,9 +1,9 @@
-我的日记
+My Notebook Cloud
 =================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   2023/index
+   ms/index
    about

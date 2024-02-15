@@ -1,4 +1,7 @@
-关于
+About
 ========
 
-这是我的公开日记
+This is a public notebook for my microsoft knowledge collection in GitHub. 
+
+... <to be added>
+
