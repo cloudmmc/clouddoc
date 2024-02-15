@@ -4,7 +4,7 @@
 
 winver
 
-## systeminfo
+## CMD: systeminfo
 
 systeminfo = Get-ComputerInfo
 
@@ -18,7 +18,7 @@ systeminfo | findstr /B /C:"OS Name" /B /C:"OS Version"
 
 wmic os get Caption, Version, BuildNumber, OSArchitecture
 
-## env
+## CMD: env
 
 ### Get the Windows version with the environment variable:
 
@@ -29,7 +29,7 @@ wmic os get Caption, Version, BuildNumber, OSArchitecture
 Get-WmiObject -Class Win32_OperatingSystem | fl -Property Caption, Version, BuildNumber
 Get-CimInstance Win32_OperatingSystem | fl -Property Caption, Version, BuildNumber, OSArchitecture
 
-## registry
+## CMD: registry
 
 Reg Query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName
 Reg Query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v DisplayVersion

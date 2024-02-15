@@ -1,7 +1,7 @@
 
-# PSWindowsUpdate Installation
+# PSWindowsUpdate module Installation
 
-## Online install PSWindowsUpdate module
+## Online install
 
 Install-Module PSWindowsUpdate
 
@@ -19,7 +19,7 @@ Get-WindowsUpdate -AcceptAll -Install -AutoReboot
 
 Get-WindowsUpdate -Install -KBArticleID 'KB5031445'
 
-## Offline installation
+## Offline install
 
 Download the latest PSWindowsUpdate version from the PowerShell gallery.
 
@@ -35,9 +35,9 @@ Installed aliases and cmdlets can be displayed by typing Get-Command–module PS
 
 MORE: https://learn.microsoft.com/en-us/powershell/gallery/how-to/working-with-packages/manual-download?view=powershellget-3.x#using-manual-download-to-acquire-a-package
 
-# Known issues
+## Known issues
 
-## unable to download from uri nuget
+### unable to download from uri nuget
 
 could be TLS security related (ref: https://rnelson0.com/2018/05/17/powershell-in-a-post-tls1-1-world/)
 
@@ -47,7 +47,7 @@ Try this command first:
 
 MORE: https://learn.microsoft.com/en-us/powershell/gallery/powershellget/install-powershellget?view=powershellget-3.x#install-the-latest-stable-release
 
-## setup proxy
+### setup proxy
 
 Because of changes in .NET Core 3.1, PowerShell 7.0 and higher use the HttpClient.DefaultProxy Property to determine the proxy configuration.
 
@@ -66,7 +66,7 @@ PowerShell 7.4 added support for the Brotli compression algorithm.
 
 MORE: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-7.4&viewFallbackFrom=powershell-3.0
 
-## get environment variable powershell
+### get environment variable powershell
 
 PowerShell exposes environmental variables via the $Env: scope (you can read more about scopes here)
 
@@ -77,7 +77,7 @@ Write-Host $Env:USERPROFILE
 PowerShell also exposes a number of automatic variables and these are made available to all scripts and commands. $HOME for example is one such automatic variable.
 
 
-## PSWindowsUpdate Access Denied
+### PSWindowsUpdate Access Denied
 
 Create WinRM VirtualAccount
 
